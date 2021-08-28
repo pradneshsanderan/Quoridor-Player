@@ -1,0 +1,31 @@
+Extensions done and where to find them:
+    1) enable 4 players to play instead of 2 (MainExtensions.hs)
+    2) enable Rematch once game ends (Main.hs)
+    3) enable players to play against a Ala opening (Ala.hs)
+    4) enable Players to players to play against StoneWall opening (StoneWall.hs)
+    5) enable Players to move vertically (cell_entension.hs && )
+    6) enable players to forfeit (MainExtensions.hs)
+
+explanation:
+1)  Players can now play with 4 players where each player begins in the middle of a respective side. It works well for humans
+    but has issues when more  or more dumb players are used. I was not able to test it with minimax function but it should
+    work for the minimax function if my utility function is corrected
+
+2)  I implemented this in the original Main file and not the extension main file as I was scared that there might be some conflicts
+    in the extension file and did not run into any conflicts in the original main file. when someone has won the game, the players
+    will then be asked if they would like to play it again. if they say 'Y' then a new game would start but if they say 'N' then
+    the game ends with a goodbye message
+3)  the Ala opening is a different type of opening that creates a half box to trap oppponents. it is a lot harder to beat than
+    reed opening. I implemented the opening using both the dumb player type of play and minimax type of play. to use the minimax
+    play you will have to uncomment it. the opening I implemented works with only 2 players and when the second player uses the opening
+
+4)  The StoneWall opening allows the oppponent to only take one path towards the winning positions as it places walls on all other paths.
+    It is tougher than the reed opening but easier than the Ala opening. I implemented the opening using both the dumb player type of play and minimax type of play. to use the minimax
+    play you will have to uncomment it. the opening I implemented works with only 2 players and when the second player uses the opening.
+
+5)  I did not complete this extension fully. I had changed some of the fucntions that would allow a player to move diagonally
+    but was not able to complete it fully. 
+
+6)  I added a check that would ask the player if he wants to forfeit on each turn. if he says 'Y' then the game ends and it states
+    which player forfeited. if he inputs anything else then the game continues. this is useful when a player already knows
+    that they cannot win so it would be wiser to just start over.

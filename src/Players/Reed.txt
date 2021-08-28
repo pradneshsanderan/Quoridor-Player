@@ -1,0 +1,16 @@
+*** PART III (10 pt) ***
+
+Is it a good idea to start the game with the Reed opening?
+
+ I had initially used the Reed opening to play against the Dumb player before implementing the Reed player. I had played
+ a total of 20 games using the Reed opening. I then measured the number of wins I had and
+ the average number of turns it took me to win a game. As I was playing against the Dumb player, I had won every game. 
+ However, the number of turns it took me to win the game was different from when I had  ot used the Reed opening. On average, it
+ took me around 11 moves per game to win when not using the Reed opening and it took me around 13 moves per game when using
+ the Reed opening. this is because the walls that I placed constricted my movement as well.
+ After playing against the reed opening in 20 games, i can conclude that it is only a good opening if the person using the reed
+ opening starts first. as only then does it constrict movements. whereas if the persob had started second and their opponent just
+ moves forward, there isnt much issues. when I started first, my average number of moves to win was 12 but when i started second, my average
+ was 15. Due to the fact that my minimax algorithm has issues, I was not able to test it with a smarter player, but when played
+ with the dumb player, i would not consider it a good opening as it does not change the outcome of the game that
+ drasticallly.
